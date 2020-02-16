@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Writing javascript code that does not work using values and variables.">
+    <meta http-equiv="author" content="King Major">
+    <title>Values and Variables</title>
+
+</head>
+
+
+<body>
+
+    <p id="message">When you click the button below, this message will change.</p>
+
+    <button onclick="myFunction()">Click me</button>
+
+    <script>
+
+        /*
+        ============================================
+        ; Title: Discussion 1.1
+        ; Author: W3Schools (https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick)
+        ; Date: 16 February 2020
+        ; Modified By: King Major
+        ; Description: This program demonstrates the
+        ; use of JavaScript values, and
+        ; and variables in an application, and includes two(2) errors that prevent 
+        ; its execution.        
+        ;===========================================
+        */
+
+        var onlyMessage
+
+
+        //myFunction is an ONCLICK event handler that will change the displayed message
+
+        function (myFunction) {
+
+            onlyMessage = "SUCCESS!" //This is our final displayed text
+
+
+            document.getElementById("message")innerHTML = onlyMessage
+            
+        }
+
+
+    </script>
+
+</body>
+
+</html>
